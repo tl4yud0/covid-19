@@ -1,0 +1,661 @@
+
+  /*
+1.Positions
+2.Box model
+3.Typographie
+4.Visuals
+5.Others
+*/
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Creando las variables de CSS*/
+:root {
+  /* colores */
+  --blue-tertiary: #8dc8e873;
+  --blue-secondary: #8dc8e8;
+  --blue-primary: #215da7;
+  --black: #000000;
+  --white: #fff;
+}
+
+/* Reset font and size*/
+html {
+  font-size: 62.5%;
+  /* font-family: 'Passion One', cursive; */
+  font-family: "Roboto", sans-serif;
+  color: var(--black-color);
+}
+.container-titleCovid{
+  max-width: 1190px;
+  width: 100%;
+    min-width: 380px;
+    margin: 4rem auto;
+    height: auto;
+    background-color: var(--white);
+}
+.row-titleCovid{
+    min-width: 280px;
+    height: auto;
+    /* text-align: center;
+    align-self: center; */
+}
+.row-titleCovid .title-Covid{
+  font-size: 2.8rem;
+    line-height: 3rem;
+    color: var(--black);
+}
+
+/*------------------- Header ------------------*/
+.hero {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  min-width: 380px;
+  height: 37rem;
+  text-align: center;
+  background-image: url("/userfiles/image/services/covid-19-vaccine/hero-image-desktop-covid-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* outline: 1px solid blue; */
+}
+.hero--title-container {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+.hero--title-container p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  width: 350px;
+}
+.btn-blue {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 3.7rem;
+  background-color: var(--blue-primary);
+  color: var(--white);
+  text-decoration: none;
+}
+.header--card {
+  width: 100%;
+  min-width: 380px;
+  height: 100%;
+  min-height: 150px;
+  margin-bottom: 45px;
+  padding: 30px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 36px #00000029;
+}
+.header--cardTexte-container {
+  max-width: 1190px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.header--cardTexte-title {
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 3.5rem;
+  color: var(--black);
+}
+.header--cardTexte-container .covid--icon,
+.covid--icon {
+  display: inline-block;
+  max-width: 70px;
+  width: 100%;
+  height: 70px;
+  margin-right: 3rem;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*------------------- Info-details ------------------*/
+.main-info-detail {
+  position: relative;
+  width: 100%;
+  min-width: 380px;
+  height: auto;
+  padding: 20px 0;
+  background-color: var(--white);
+}
+/* .info-cards-container{
+
+} */
+.info-detail--card {
+  width: 100%;
+  min-width: 280px;
+  max-width: auto;
+  height: 19.5rem;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 30px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 36px #00000034;
+  text-decoration: none;
+
+}
+.contenedor{
+  width: 100%;
+}
+.info-detail--card:hover {
+cursor: pointer;
+}
+.info-texte-container {
+  display: flex;
+}
+.info-arrow-container {
+  display: flex;
+  justify-content: flex-end;
+}
+/* .product--icon {
+  display: inline-block;
+  max-width: 70px;
+  width: 100%;
+  height: 80px;
+  margin-right: 30px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.info--arrow {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/userfiles/image/services/covid-19-vaccine/arrow-down.svg);
+  cursor: pointer;
+}
+.info-detail--card:hover .info--arrow {
+  background-image: url(/userfiles/image/services/covid-19-vaccine/hover-arrow.svg);
+}
+.info-card--title {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 3rem;
+  color: var(--blue-primary);
+}
+.info-card--body {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  line-height: 1.6rem;
+  color: var(--black);
+}
+.info-detail--card:hover .info-card--body {
+text-decoration: underline;
+}
+
+/*------------------- cards-info ------------------*/
+
+.main-info {
+  width: 100%;
+  min-width: 380px;
+  height: auto;
+  padding: 70px 0;
+  margin-top: 50px;
+  background-color: #f4f4f4;
+}
+.advantages-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%;
+  width: 100%;
+  max-width: 1190px;
+}
+.advantages-detail--card {
+  width: 48%;
+  min-height: 150px;
+  height: auto;
+  margin: 1%;
+  /* padding: 6rem 3.5rem; */
+  text-align: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 480px;
+}
+.content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* .content1 div, .content2 div {
+border: solid 1px red;
+} */
+.content-img {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+.advantages-card--title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--blue-primary);
+  padding: 0 2rem;
+}
+.advantages-card--subTitle {
+  font-size: 2.6rem;
+}
+.advantages-card--body {
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--red-metro);
+  margin-bottom: 1rem;
+}
+.advantages-card--bodyText {
+  border-radius: 4px;
+  padding: 1.3rem 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--blue-secondary);
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+  color: var(--black);
+}
+
+/*------------------- vaccine ------------------*/
+.service {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 380px;
+  height: auto;
+  padding: 10rem;
+  text-align: center;
+  background-color: var(--blue-tertiary);
+}
+.service--title-container {
+  width: 90%;
+  min-width: 280px;
+  max-width: 1200px;
+  height: auto;
+  text-align: center;
+  align-self: center;
+}
+.service--title-container h2 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-family: "Passion One", cursive;
+  margin: 0 0 3rem 0;
+}
+.service--title-container p {
+  font-size: 2.8rem;
+}
+
+.service-ca {
+  padding: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--blue-primary);
+  font-size: 3rem;
+  font-weight: normal;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+/* .service-ca:hover {
+  background-color:var(--blue-secondary);
+} */
+.steps-detail--title .text-service {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+/*------------------- symptoms ------------------*/
+.container__symptoms {
+  width: 100%;
+  min-width: 380px;
+  height: auto;
+  padding: 9rem 0;
+  background-color: var(--blue-tertiary);
+}
+.intro__symptoms {
+  padding: 0 3rem;
+  min-width: 280px;
+  height: auto;
+  text-align: center;
+  align-self: center;
+}
+.intro__symptoms h2 {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  color: var(--blue-primary);
+  margin-bottom: 4rem;
+}
+.intro__symptoms h3 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 2.8rem;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+.intro__symptoms h4 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 2.8rem;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+.intro__symptoms p {
+  font-weight: lighter;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.intro__symptoms .symptoms__Points {
+  font-weight: normal;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  margin: 3rem 0;
+}
+.intro__symptoms ul {
+  font-weight: lighter;
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  margin: 0 auto;
+}
+.intro__symptoms .point__one {
+  max-width: 489px;
+  width: 100%;
+}
+.intro__symptoms .point__two {
+  max-width: 393px;
+  width: 100%;
+}
+.intro__symptomsLine {
+  max-width: 1280px;
+  width: 100%;
+  border: 0 none var(--white);
+  border-top: 1px solid var(--white);
+  height: 1px;
+  margin: 4rem auto;
+  margin-bottom: 4rem;
+  display: block;
+  clear: both;
+}
+.icons__symptomsContainer {
+  max-width: 1190px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+.icons__symptoms {
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 3rem;
+  text-align: center;
+}
+.icons__symptomsIcon {
+  width: 123px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.symptomsIcon{
+  text-decoration: none;
+  color: var(--black);
+}
+.icons__symptomsText {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+/*------------------- reference ------------------*/
+.reference__container{
+  max-width: 1160px;
+  width: 70%;
+  /* min-width: 380px; */
+  height: auto;
+  margin: 10rem auto;
+}
+.reference__container h5{
+font-weight: bold;
+font-size: 1.4rem;
+line-height: 1.8rem;
+margin-bottom: 3rem;
+}
+.reference__container ol{
+  list-style-type: none;
+  counter-reset: compteListe;
+  margin: 0;
+}
+.reference__container li{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
+    }
+.reference__container li::before {
+      counter-increment: compteListe 1;
+      content: counter(compteListe) ". ";
+    }
+.reference__container a{
+color: var(--black);
+  }
+  .references-legal{
+    font-size: 1.4rem;
+  }
+
+      /*//////Section faq///////*/
+
+      .section-carrousel-faq{
+        background-color: var(--white);
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .container-faq{
+      max-width: 1024px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .container-faq h2{
+     color: var(--blue-primary);
+     font-weight: bold;
+     font-size: 2.8rem;
+    }
+
+.currency-table--container{
+  /* scroll-snap-align: center; */
+  width: 90%;
+  min-width: 380px;
+  max-width: 768px;
+  height: auto;
+  margin: 0 auto;
+}
+.currency-table--container table{
+  width: 100%;
+  height: 100%;
+  border-spacing: 0px;
+  border: 1px solid black;
+}
+.currency-table--container td{
+  width: 50%;
+  text-align: left;
+  padding-left: 40px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--black);
+  background-color: var(--white);
+  /* border: 1px solid var(--black); */
+}
+.table__left{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.table__down-left{
+  border-right: 1px solid black;
+}
+.table__right {
+  border-bottom: 1px solid black;
+}
+
+.currency-table--container .table__right{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color:var(--black);
+}
+
+    /* @media screen and (min-width: 980px) {
+        .section-carrousel-faq{
+            padding-top: 80px;
+        }     
+    } */
+
+@media only screen and (max-width: 1200px) {
+  .hero--title-container {
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .icons__symptoms {
+    width: 33%;
+  }
+  .info-detail--card{
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .service{
+       padding: 10rem 3rem;
+    }
+    .intro__symptoms .point__one {
+  max-width: 360px;
+}
+  }
+/* @media only screen and (max-width: 480px) {
+  .hero {
+    background-image: url(//userfiles/image/services/covid-19-vaccine/banner-image-mobile-covid-1.jpg);
+    height: 100rem;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .hero--title-container {
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 16rem;
+  }
+  .intro__symptoms .point__one {
+    max-width: 300px;
+  }
+} */
+@media only screen and (max-width: 480px) {
+  .hero {
+    background-image: url(//userfiles/image/services/covid-19-vaccine/banner-image-mobile-covid-1.jpg);
+    height: 60rem;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .hero--title-container {
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+  .header--cardTexte-title{
+    font-size: 2.7rem;
+    line-height: 2.6rem;
+  }
+  .btn-blue {
+    font-size: 3rem;
+    line-height: 3.1rem;
+  }
+  .info-card--body{
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+  .icons__symptoms {
+    width: 50%;
+  }
+  .intro__symptoms .point__two {
+    max-width: 240px;
+  }
+  /* .info-detail--card{
+    display: flex;
+  } */
+  .info-texte-container{
+    width: 80%;
+  }
+  .contenedor{
+    display: flex;
+  }
+  .info-arrow-container{
+    width: 20%;
+  }
+  .covid--icon{
+    display: none;
+  }
+  .info-card--title{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+  .info-card--body{
+    font-size: 1.6rem;
+  }
+
+}
+@media only screen and (max-width: 980px) {
+  .advantages-cards-container {
+    display: block;
+  }
+  .advantages-detail--card {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+  .advantages-card--title {
+    padding: 0 3rem;
+  }
+  .content1{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .info-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+  .info-detail--card {
+    max-width: 580px;
+
+  }
+}
