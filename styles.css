@@ -58,7 +58,7 @@ html {
   min-width: 380px;
   height: 37rem;
   text-align: center;
-  background-image: url("/covid-19-vaccine/hero-image-desktop-covid-2.jpg");
+  background-image: url("./covid-19-vaccine/hero-image-desktop-covid-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -184,11 +184,11 @@ cursor: pointer;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/covid-19-vaccine/arrow-down.svg);
+  background-image: url(./covid-19-vaccine/arrow-down.svg);
   cursor: pointer;
 }
 .info-detail--card:hover .info--arrow {
-  background-image: url(/covid-19-vaccine/hover-arrow.svg);
+  background-image: url(./covid-19-vaccine/hover-arrow.svg);
 }
 .info-card--title {
   margin-bottom: 20px;
@@ -561,7 +561,7 @@ color: var(--black);
   }
 /* @media only screen and (max-width: 480px) {
   .hero {
-    background-image: url(//covid-19-vaccine/banner-image-mobile-covid-1.jpg);
+    background-image: url(/./covid-19-vaccine/banner-image-mobile-covid-1.jpg);
     height: 100rem;
     justify-content: center;
     align-items: flex-end;
@@ -577,7 +577,7 @@ color: var(--black);
 } */
 @media only screen and (max-width: 480px) {
   .hero {
-    background-image: url(//covid-19-vaccine/banner-image-mobile-covid-1.jpg);
+    background-image: url(/./covid-19-vaccine/banner-image-mobile-covid-1.jpg);
     height: 60rem;
     justify-content: center;
     align-items: flex-end;
