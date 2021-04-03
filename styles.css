@@ -577,7 +577,7 @@ color: var(--black);
 } */
 @media only screen and (max-width: 480px) {
   .hero {
-    background-image: url(/./covid-19-vaccine/banner-image-mobile-covid-1.jpg);
+    background-image: url(./covid-19-vaccine/banner-image-mobile-covid-1.jpg);
     height: 60rem;
     justify-content: center;
     align-items: flex-end;
